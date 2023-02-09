@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Almost-White: hsl(0, 0%, 98%);
+    --Medium-Gray: hsl(0, 0%, 41%);
+    --Almost_Black: hsl(0, 0%, 8%);
+}
+
+body {
+    background-color: var(--Almost-White);
+    font-family: "Epilogue", sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    width: 90%;
+    margin: 30px auto;
+    align-items: center;
+}
+
+.header .title {
+    font-weight: 500;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+p {
+    color: var(--Medium-Gray);
+    font-size: 18px;
+}
+
+.feat,
+.compan {
+    position: relative;
+}
+
+.box {
+    background-color: #ffffff;
+    z-index: 999;
+    position: absolute;
+    border-radius: 5px;
+    position: absolute;
+    top: 30px;
+    padding: 13px;
+    box-shadow: 0px 2px 9px 0px #d0d0ceee;
+    display: none;
+    transition: 0.5s;
+}
+
+.one {
+    right: 2px;
+}
+
+.two {
+    left: 16px;
+}
+
+.title {
+    display: flex;
+}
+
+.box div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+    color: var(--Medium-Gray);
+    padding: 3px;
+    font-size: 15px;
+}
+
+.links div {
+    cursor: pointer;
+    color: var(--Medium-Gray);
+}
+
+.links>div,
+.signing div {
+    margin-right: 13px;
+    margin-left: 15px;
+    font-size: 13px;
+}
+
+.signing {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    color: var(--Medium-Gray);
+}
+
+.register {
+    border: 2px solid var(--Medium-Gray);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+/* Mobile ============================= */
+
+.menu {
+    position: absolute;
+    top: 7px;
+    right: 21px;
+}
+
+.aside {
+    width: 60%;
+    height: 100vh;
+    background-color: white;
+    display: none;
+    position: relative;
+    box-shadow: 0px 2px 9px 0px #d0d0ceee;
+    z-index: 9999;
+}
+
+.listphone {
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.appear {
+    display: block;
+}
+
+.featphone {
+    display: flex;
+    display: flex;
+    margin-left: 30px;
+}
+
+.comphone,
+.featphone {
+    margin-left: 30px !important;
+}
+
+.aside div {
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.aside img {
+    margin-top: 15px;
+}
+
+.title img {
+    width: 12px;
+    height: 10px;
+    margin-left: 2px;
+}
+
+.aside .title img {
+    margin-top: 18px;
+    margin-left: -2px;
+}
+
+.content {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.content .image img {
+    height: auto;
+    max-width: 70%;
+    min-width: 300px;
+}
+
+.content .image {
+    margin-left: 50px;
+}
+
+h1 {
+    font-size: 65px;
+}
+
+.content .text p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 30px;
+}
+
+.content .text .btn {
+    width: fit-content;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: var(--Almost-White);
+    background-color: #000;
+}
+
+.show-disapear {
+    display: block;
+}
+
+.title div {
+    margin-left: -10px;
+}
+
+.open {
+    display: none;
+}
+
+.phonesigning {
+    text-align: center;
+    text-align: center;
+    margin-top: -40px!important;
+}
+
+@media (max-width: 676px) {
+    .content {
+        display: block;
+        margin: auto;
+        position: absolute;
+        top: 48px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    p {
+        font-size: 13px;
+    }
+    h1 {
+        font-size: 50px;
+        margin-top: 20px;
+    }
+    .content .image {
+        display: flex;
+        justify-content: center;
+    }
+    .content .image img {
+        position: absolute;
+        max-width: 100%;
+        max-height: 308px;
+        min-width: 200px;
+        top: 27px;
+    }
+    .content .text {
+        width: fit-content;
+        margin: 360px auto;
+        text-align: center;
+    }
+    .links div,
+    .signing {
+        display: none;
+    }
+    .content .text h1 {
+        font-size: 30px;
+    }
+    .content .text .btn {
+        margin: auto;
+    }
+    .open {
+        display: block;
+    }
+    h2 {
+        position: absolute;
+        top: 28px;
+    }
+}
